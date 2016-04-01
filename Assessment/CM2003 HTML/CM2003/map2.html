@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css.css">
+		<title>CM2003</title>
+	</head>
+	<body>
+		<!---Header bars--->
+		<div id = "head-bar">
+			<div class = "header">
+				<h1> CM2003 </h1>
+				<div class= "icon">
+					<img src="http://placehold.it/50x50">
+				</div>
+			</div>
+			
+			<!---Navigation Bar--->
+			<div class= "navbar">
+			<ul>
+				<li><a href="home.html" >Home</a></li>
+				<li><a href="map.html">Map</a></li>
+				<li><a href="story.html">Historical Stories</a></li>
+				<li><a href="album.html">Album</a></li>
+			</ul>
+			</div>
+			<!--- End of Navigation --->
+		</div>
+		<!---End of Headers--->
+                <div id ="page">
+					<center>
+                    <div id="map">
+                        <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2166.090350402409!2d-2.1432107838721177!3d57.11841899330904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488410483d2f0941%3A0x5d8969688e77366a!2sRobert+Gordon+University+Aberdeen%2C+Garthdee+Campus!5e0!3m2!1sen!2suk!4v1459337304953" width="700" height="550" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+                    </div>
+					</center>
+                    
+                    <div class = "navigationalButtons">
+                        <FORM id = "backButton">
+                            <INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;">
+                        </FORM>
+						<form id = "nextButton">
+							<a href="story2.html"><button type="button" id = "nextButton">Next</button></a>
+						</form>
+                    </div>
+                    
+                    <div id="panel-left-map" class="mypanel">
+                        
+                        <p><b>Routes</b></p>
+                        
+                    <a href="map.html"><p>Route 1</p></a>
+                    <p>Route 2</p>
+                    </div> 
+                </div>
+				
+				<footer>
+				Selected Icon on Map will have its story appear here in short form. Link to long form story here
+				</footer>
+	</body>
+</html>

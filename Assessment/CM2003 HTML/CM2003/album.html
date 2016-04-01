@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css.css">
+		<title>CM2003</title>
+	</head>
+	<body>
+		<!---Header bars--->
+		<div id = "head-bar">
+			<div class = "header">
+				<h1> CM2003 </h1>
+				<div class= "icon">
+					<img src="http://placehold.it/50x50">
+				</div>
+			</div>
+			
+			<!---Navigation Bar--->
+			<div class= "navbar">
+			<ul>
+				<li><a href="home.html" >Home</a></li>
+				<li><a href="map.html">Map</a></li>
+				<li><a href="story.html">Historical Stories</a></li>
+				<li><a href="album.html">Album</a></li>
+			</ul>
+			</div>
+			<!--- End of Navigation --->
+		</div>
+		<!---End of Headers--->
+		<div class= "albumPic">
+			<img src="http://placehold.it/250x250">
+			<img src="http://placehold.it/250x250">
+			<img src="http://placehold.it/250x250">
+			<img src="http://placehold.it/250x250">
+			<div class = "photoButtons">
+                <FORM id = "photo">
+                    <INPUT Type="button" VALUE="Photo" onClick="history.go(-1);return true;">
+                </FORM>
+				<form id = "video">
+					<a href="#"><button type="button" id = "nextButton">Video</button></a>
+				</form>
+            </div>
+			<div class = "uploadButton">
+				<form id="upload">
+					<input type="button" value="Upload" onClick="history.go(-1); return true;">
+				</form>
+			</div>
+			<br></br>
+			<img src="http://placehold.it/1061x500">
+		</div>
+		<div id="panel-left-pic" class="mypanel">
+			<p><b>Pictures</b></p>
+            <p><a href = "#"><p>Picture1</p>
+            <p><a href="#"><p>Picture2</p></a>
+		</div>
+	</body>
+</html>
