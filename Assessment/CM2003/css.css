@@ -55,11 +55,19 @@ p{
     background-color:#00cccc;
 }
 #panel-left-story {
-    margin-top: -472px;
+    margin-top: -462px;
 	height: 823px;
 	width: 200px;
     margin-left: 236px;
     background-color:#00cccc;
+}
+
+#panel-left-pic {
+	margin-top: -709px;
+	height: 823px;
+	width: 200px;
+	margin-left: 238px;
+	background-color:#00cccc;
 }
 
 div.mypanel {
@@ -143,14 +151,6 @@ footer {
 .uploadButton{
 	margin-left: 995px;
 	margin-top: -50px;
-}
-
-#panel-left-pic {
-    margin-top: -829px;
-	height: 823px;
-	width: 200px;
-    margin-left: 238px;
-    background-color:#00cccc;
 }
 
 ul{
