@@ -39,6 +39,24 @@ p{
     background: #cccccc;
 }
 
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
 #main {
     padding-left: 100px;
 	padding-right: 100px;
@@ -121,10 +139,63 @@ footer {
 
 }
 
+
+
 #navSlide{
+	width:604px;
+	height:453px;
+	position:relative;
 	margin-top: 80px;
 	margin-bottom: -500px;
 	margin-left: 350px;
+}
+
+#navSlide .prevButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('buttons.png') no-repeat;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	z-index:2000;
+	background-position:left top;
+	left:0
+}
+
+#navSlide .prevButton:hover{ background-position:left bottom;left:0;}
+
+#navSlide .nextButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('buttons.png') no-repeat;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	z-index:2000;
+	background-position:right top;
+	right:0
+}
+
+#navSlide .nextButton:hover{background-position:right bottom;right:0;}
+
+#navSlide ul{
+	width:604px;
+	height:453px;
+	list-style:none outside none;
+	position:relative;
+	overflow:hidden;
+}
+
+#navSlide li:first-child{
+	display:list-item;
+	position:absolute;
+}
+
+#navSlide li{
+	position:absolute;
+	display:none;
 }
 
 #homeStuff{

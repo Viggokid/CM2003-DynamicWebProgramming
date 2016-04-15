@@ -29,8 +29,16 @@
 		<div id ="page">
 
                     <div id="homeStuff">
-                        <div id = "navSlide"><img src="http://placehold.it/1100x250">
-						
+                        <div id = "navSlide">
+							<ul>
+								<li><img src="picture1.jpg" width="24000" height="240" /></li>
+								<li><img src="picture2.jpg" width="24000" height="240" /></li>
+								<li><img src="picture3.jpg" width="24000" height="240" /></li>
+							</ul>
+							<span class="button prevButton"></span>
+							<span class="button nextButton"></span>
+						</div>
+
 						<div id = "about">
 							<center><p><b>About</b></p></center>
 							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -42,4 +50,91 @@
                     </div>
                 </div>
 	</body>
+
+	<script src="jquery-1.4.2.min.js"></script>
+
+	<script>
+		$(window).load(function(){
+			var pages = $('#navSlide li'), current=0;
+			var currentPage,nextPage;
+			var timeoutID;
+			var buttonClicked=0;
+
+			var handler1=function(){
+				buttonClicked=1;
+				$('#navSlide .button').unbind('click');
+				currentPage= pages.eq(current);
+				if($(this).hasClass('prevButton'))
+				{
+					if (current <= 0)
+						current=pages.length-1;
+					else
+						current=current-1;
+					nextPage = pages.eq(current);
+
+					nextPage.css("marginLeft",-604);
+					nextPage.show();
+					nextPage.animate({ marginLeft: 0 }, 800,function(){
+						currentPage.hide();
+					});
+					currentPage.animate({ marginLeft: 604 }, 800,function(){
+						$('#navSlide .button').bind('click',handler1);
+					});
+				}
+				else
+				{
+
+					if (current >= pages.length-1)
+						current=0;
+					else
+						current=current+1;
+					nextPage = pages.eq(current);
+
+					nextPage.css("marginLeft",604);
+					nextPage.show();
+					nextPage.animate({ marginLeft: 0 }, 800,function(){
+					});
+					currentPage.animate({ marginLeft: -604 }, 800,function(){
+						currentPage.hide();
+						$('#navSlide .button').bind('click',handler1);
+					});
+				}
+			}
+
+			var handler2=function(){
+				if (buttonClicked==0)
+				{
+					$('#navSlide .button').unbind('click');
+					currentPage= pages.eq(current);
+					if (current >= pages.length-1)
+						current=0;
+					else
+						current=current+1;
+					nextPage = pages.eq(current);
+					nextPage.css("marginLeft",604);
+					nextPage.show();
+					nextPage.animate({ marginLeft: 0 }, 800,function(){
+					});
+					currentPage.animate({ marginLeft: -604 }, 800,function(){
+						currentPage.hide();
+						$('#navSlide .button').bind('click',handler1);
+					});
+					timeoutID=setTimeout(function(){
+						handler2();
+					}, 4000);
+				}
+			}
+
+			$('#navSlide .button').click(function(){
+				clearTimeout(timeoutID);
+				handler1();
+			});
+
+			timeoutID=setTimeout(function(){
+				handler2();
+			}, 4000);
+
+		});
+
+	</script>
 </html>
