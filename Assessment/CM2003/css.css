@@ -179,8 +179,8 @@ footer {
 #navSlide.nextButton:hover{background-position:right bottom;right:0;}
 
 #navSlide ul{
-	width:604px;
-	height:453px;
+	width:1400px;
+	height:440px;
 	list-style:none outside none;
 	position:relative;
 	overflow:hidden;
