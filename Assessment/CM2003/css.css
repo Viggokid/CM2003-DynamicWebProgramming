@@ -170,8 +170,7 @@ footer {
 	width:68px;
 	position:absolute;
 	background:url('buttons.png') no-repeat;
-	top:50%;
-	margin-top:50%;
+	margin-top:90px;
 	cursor:pointer;
 	z-index:2000;
 	background-position:right top;
