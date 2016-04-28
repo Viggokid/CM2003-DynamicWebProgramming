@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css.css">
+	<title>CM2003</title>
+  </head>
+  <body>
+  <!---Header bars--->
+		<div id = "head-bar">
+			<div class = "header">
+				<h1> CM2003 </h1>
+				<div class= "icon">
+				<img src="http://placehold.it/50x50">
+			</div>
+		</div>
+		
+	<!---Navigation Bar--->
+			<div class= "navbar">
+			<ul>
+				<li><a href="home.html" >Home</a></li>
+				<li><a href="map.html">Map</a></li>
+				<li><a href="story.html">Historical Stories</a></li>
+				<li><a href="album.html">Album</a></li>
+			</ul>
+			</div>
+	<!--- End of Navigation --->
+          <!-- Panel for selecting start and end points-->
+          <!--<div id="floating-panel">-->
+          <!-- drop down menu for start point-->
+          <!--<b>Start: </b>
+          <select id="start">
+            <option value="aberdeen, uk">Aberdeen</option>
+            <option value="portlethen, uk">Portlethen</option>
+            <option value="newtonhill, uk">Newtonhill</option>
+            <option value="inverurie, uk">Inverurie</option>
+            <option value="oldmeldrum, uk">Oldmeldrum</option>
+            <option value="dundee, uk">Dundee</option>
+            <option value="montrose, uk">Montrose</option>
+            <option value="stonehaven, uk">Stonehaven</option>
+            <option value="miltumber, uk">Miltumber</option>
+            <option value="edinburgh, uk">Edinburgh</option>
+            <option value="peterhead, uk">Peterhead</option>
+            <option value="fraserburgh, uk">Fraserburgh</option>
+          </select>-->
+          <!-- drop down menu for start point-->
+          <!--<b>End: </b>
+          <select id="end">
+            <option value="aberdeen, uk">Aberdeen</option>
+            <option value="portlethen, uk">Portlethen</option>
+            <option value="newtonhill, uk">Newtonhill</option>
+            <option value="inverurie, uk">Inverurie</option>
+            <option value="oldmeldrum, uk">Oldmeldrum</option>
+            <option value="dundee, uk">Dundee</option>
+            <option value="montrose, uk">Montrose</option>
+            <option value="stonehaven, uk">Stonehaven</option>
+            <option value="miltumber, uk">Miltumber</option>
+            <option value="edinburgh, uk">Edinburgh</option>
+            <option value="peterhead, uk">Peterhead</option>
+            <option value="fraserburgh, uk">Fraserburgh</option>
+          </select>
+          </div>-->
+          <!-- the map-->
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: {lat: 57.1184, lng: -2.1410}
+        });
+        directionsDisplay.setMap(map);
+
+
+          calculateAndDisplayRoute2(directionsService, directionsDisplay);
+
+
+        map.set('styles', [
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [
+              { color: '#f4a460' },
+              { weight: 1.6 }
+            ]
+          }, {
+            featureType: 'road',
+            elementType: 'labels',
+            stylers: [
+              { saturation: -100 },
+              { invert_lightness: true }
+            ]
+          }, {
+            featureType: 'landscape',
+            elementType: 'geometry',
+            stylers: [
+              { hue: '#00ff00' },
+              { gamma: 1.4 },
+              { saturation: 82 },
+              { lightness: 96 }
+            ]
+          }, {
+            featureType: 'poi.school',
+            elementType: 'geometry',
+            stylers: [
+              { hue: '#fff700' },
+              { lightness: -15 },
+              { saturation: 99 }
+            ]
+          }
+        ]);
+
+
+      }
+
+      function calculateAndDisplayRoute2(directionsService, directionsDisplay) {
+        directionsService.route({
+          origin: "stonehaven, uk",
+          destination: "montrose, uk",
+          travelMode: google.maps.TravelMode.WALKING
+        }, function(response, status) {
+          if (status === google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+	  function changeText(value){
+			document.getElementById('pText').innerHTML = value;
+		}
+    </script>
+	</div>
+	 <div class = "navigationalButtons">
+					<input type="button" value="Back" id="back" onclick='changeText("This is story1")'/>
+					<input type="button" value="Next" id="next" onclick='changeText("This is story2")'/>
+     </div>
+  <div id="panel-left" class="mypanel">
+    <p><b>Routes</b></p>
+    <div id = "route1"><a href="map.html"><p>Route 1: Aberdeen to Newtonhill</p></a></div>
+    <div id = "route2"><a href="map2.html"><p>Route 2: Stonehaven to Montrose</p></a></div>
+
+  </div>
+                    
+	<footer>
+		<p id='pText'>Selected Icon on Map will have its story appear here in short form. Link to long form story here</p>
+	</footer>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAilh9E9C8ZFLldI5VIdjDDkXemojBrhzU&callback=initMap">
+    </script>
+  </body>
+</html>

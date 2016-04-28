@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <title>CM2003</title>
+    </head>
+    <body>
+        <!---Header bars--->
+
+        <div id = "head-bar">
+            <div class = "header">
+                <!---Title--->
+                <h1>CM2003</h1>
+                <!---Thumbnail Icon--->
+                <img class = "icon" width = 50 height = 50 src="http://bestcoverphoto.com/wp-content/uploads/coverphotos/River-Source-Nature-Ruda-facebook-cover-photos-250x250.jpg">
+
+            </div>
+
+            <!---Navigation Bar--->
+            <div class= "navbar">
+                <ul>
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="story.html">Historical Stories</a></li>
+                    <li><a href="album.html">Album</a></li>
+                </ul>
+            </div>
+            <!--- End of Navigation --->
+        </div>
+        <!---End of Headers--->
+
+        <!---Album Pictures--->
+        <div id = "page">
+        <div class= "albumPic">
+            <img id="first" onclick="changeImage('first')" src="http://www.channelnewsasia.com/blob/2659284/1459574438000/chestnut-nature-park-data.jpg" width = 250px height = 250px>
+            <img id="second" onclick="changeImage('second')" src="http://www.wildlifetrusts.org/sites/default/files/images/Ballynahone%20Bog%20at%20dusk,%20Northern%20Ireland%20(c)%20Ben%20Hall%202020%20vision.jpg" width = 250px height = 250px>
+            <img id="third" onclick="changeImage('third')" src="http://static.panoramio.com/photos/large/63311351.jpg" width = 250px height = 250px>
+            <img id="fourth" onclick="changeImage('fourth')" src="http://static.panoramio.com/photos/large/63311535.jpg" width = 250px height = 250px>
+            <div class = "photoButtons">
+                <FORM id = "photo">
+                    <INPUT Type="button" VALUE="Photo" onClick="history.go(-1);
+                            return true;">
+                </FORM>
+                <form id = "video">
+                    <a href="#"><button type="button" id = "nextButton">Video</button></a>
+                </form>
+            </div>
+
+            <!---Upload Button--->
+            <div class = "uploadButton">
+                <form id="upload">
+                    <input type="button" value="Upload" onClick="history.go(-1);
+                            return true;">
+                </form>
+            </div>
+
+            <!---Selected Image--->
+            <img id = "mainImage" src="http://www.theuiaa.org/upload_area/Respect%20the%20Mountains/RespecttheMountains_PR.jpg" width = 1024px height = 680px>
+         </div>
+        </div>
+        <!---End of Album Pictures--->
+
+        <!---Left Panel of Pictures--->
+        <div id="panel-left" class="mypanel">
+            <p><b>Pictures</b></p>
+            <p><a href = "#"><p>Picture1</p>
+            <p><a href="#"><p>Picture2</p></a>
+            <p><a href = "#"><p>Picture3</p>
+            <p><a href="#"><p>Picture4</p></a>
+            <p><a href = "#"><p>Picture5</p>
+        </div>
+
+        </body>
+
+    <script type = text/javascript>
+        function changeImage(id) {
+
+            var image = document.getElementById(id);
+            var temp = image.src;
+            var mainImage = document.getElementById('mainImage');
+
+            image.src = mainImage.src;
+            mainImage.src = temp;
+
+
+        }
+    </script>
+</html>

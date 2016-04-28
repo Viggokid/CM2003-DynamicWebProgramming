@@ -1,0 +1,297 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    font-family: "Verdana", sans-serif;
+}
+h1{
+    text-align: center;
+    padding-top: 25px;
+}
+a{
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+p{
+    margin-left: 10px;
+}
+
+
+
+.header{
+    display: block;
+    top: 0;
+    width: 75%;
+    height: 95px;
+    margin-top: -25px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #00CCFF;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin-top: -50px;
+}
+
+.navbar{
+    list-style-type: none;
+    width: 75%;
+    margin-top: -25px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    background: #cccccc;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
+#head-bar{
+    position:fixed;
+    top:0;
+    width: 100%;
+    min-width: 1024px;
+}
+
+#page{
+    margin-top: 130px;
+}
+
+#main {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 436px;
+    background-color:LightYellow;
+    width: 1015px;
+}
+
+#panel-left {
+    position: fixed;
+    top: 0;
+    padding-top: 110px;
+    height: 823px;
+    width: 200px;
+    left: 0;
+    background-color:#00cccc;
+}
+#panel-left-story {
+    margin-top: -457px;
+    height: 823px;
+    min-width: 200px;
+    width: 200px;
+    margin-left: 236px;
+    background-color:#00cccc;
+}
+
+#panel-left-pic {
+    margin-top: -824px;
+    height: 823px;
+    min-width: 200px;
+    width: 200px;
+    margin-left: 238px;
+    background-color:#00cccc;
+}
+
+div.mypanel {
+    width:20%;
+    position: absolute;
+}
+
+.navigationalButtons{
+    margin-left:50%;
+    margin-bottom: 450px;
+    width: 100%;
+}
+
+.albumButtons{
+    margin-left:20%;
+    margin-right:20%;
+    width: 200%;
+    margin-bottom: 100px;
+    margin-top: -100px;
+}
+
+.inner{
+    display: inLine-block;
+}
+
+#map {
+    display: block;
+    position: relative;
+    min-width: 1024px;
+    width: 70%;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    //margin-top: 100px;
+}
+
+#floating-panel {
+    top: 150px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: orange;
+    margin-top: -375px;
+    left: 0;
+
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#thumbnails{
+    margin-top: 100px;
+    margin-bottom: -500px;
+}
+
+#mainImage{
+    padding-top: 30px;
+
+}
+
+#navSlide{
+    min-width: 500px;
+    width:60%;
+    height:240px;
+    position:relative;
+    margin-top: 15px;
+    margin-bottom: -500px;
+    margin-left: 200px;
+}
+
+#navSlide .prevButton{
+    height:72px;
+    width:68px;
+    min-width: 68px;
+    position:absolute;
+    background:url('buttons.png') no-repeat;
+    top:75%;
+    cursor:pointer;
+    z-index:2000;
+    background-position:left top;
+    left:0
+}
+
+.navPic{
+
+    min-width:300px;
+    width: 100%;
+}
+
+#navSlide .prevButton:hover{ background-position:left bottom;left:0;}
+
+#navSlide .nextButton{
+    height:72px;
+    width:68px;
+    min-width: 68px;
+    position:absolute;
+    background:url('buttons.png') no-repeat;
+    top:75%;
+    cursor:pointer;
+    z-index:2000;
+    background-position:right top;
+    right:0
+}
+
+#navSlide.nextButton:hover{background-position:right bottom;right:0;}
+
+#navSlide ul{
+    min-width: 1400px;
+    width:1400px;
+    height:440px;
+    list-style:none outside none;
+    position:relative;
+    overflow:hidden;
+}
+
+#navSlide li:first-child{
+    display:list-item;
+    position:absolute;
+}
+
+#navSlide li{
+    position:absolute;
+    display:none;
+}
+
+#homeStuff{
+    width: 75%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.albumPic{
+    margin-left: 450px;
+    margin-right: 250px;
+    min-width: 1024px;
+}
+
+#about{
+    margin-top: 750px;
+    margin-left: 200px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.icon{
+    margin-top: -50px;
+    margin-bottom: 500px;
+    margin-left: 60px;
+}
+
+.uploadButton{
+    margin-left: 995px;
+    margin-top: -50px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    display: inline;
+    float: left;
+}
+
+li a{
+    display: inline;
+    text-align: center;
+    margin-left: 50px;
+    padding: 14px 100px;
+    text-decoration: none;
+}
