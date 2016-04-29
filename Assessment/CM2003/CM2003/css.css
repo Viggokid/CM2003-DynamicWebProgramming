@@ -77,8 +77,9 @@ p{
 }
 
 #main {
-    top: 105px;
-
+    margin-top: 105px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-left: 436px;
     background-color:LightYellow;
     width: 1015px;
