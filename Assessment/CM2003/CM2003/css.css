@@ -23,7 +23,7 @@ p{
 
 
 .header{
-
+    display: block;
     top: 0;
     width: 75%;
     height: 95px;
@@ -68,7 +68,6 @@ p{
 }
 
 #head-bar{
-    position:fixed;
     top:0;
     width: 100%;
 }
