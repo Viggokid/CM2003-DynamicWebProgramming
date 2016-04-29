@@ -182,6 +182,7 @@ footer {
     height:72px;
     width:68px;
     min-width: 68px;
+    margin-right: -550px;
     position:absolute;
     background:url('buttons.png') no-repeat;
     top:75%;
