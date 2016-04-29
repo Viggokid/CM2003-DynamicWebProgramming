@@ -128,7 +128,7 @@ div.mypanel {
 }
 
 footer {
-    z-index:-1;
+    position:relative;
     bottom: 0;
     background-color: orange;
     margin-top: -375px;
