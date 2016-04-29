@@ -80,7 +80,7 @@
                         current = current - 1;
                     nextPage = pages.eq(current);
 
-                    nextPage.css("marginLeft", -604);
+                    nextPage.css("marginLeft", -1400);
                     nextPage.show();
                     nextPage.animate({marginLeft: 0}, 800, function () {
                         currentPage.hide();
@@ -102,7 +102,7 @@
                     nextPage.show();
                     nextPage.animate({marginLeft: 0}, 800, function () {
                     });
-                    currentPage.animate({marginLeft: -604}, 800, function () {
+                    currentPage.animate({marginLeft: -1400}, 800, function () {
                         currentPage.hide();
                         $('#navSlide .button').bind('click', handler1);
                     });
@@ -119,11 +119,11 @@
                     else
                         current = current + 1;
                     nextPage = pages.eq(current);
-                    nextPage.css("marginLeft", 604);
+                    nextPage.css("marginLeft", 1400);
                     nextPage.show();
                     nextPage.animate({marginLeft: 0}, 800, function () {
                     });
-                    currentPage.animate({marginLeft: -604}, 800, function () {
+                    currentPage.animate({marginLeft: -1400}, 800, function () {
                         currentPage.hide();
                         $('#navSlide .button').bind('click', handler1);
                     });
