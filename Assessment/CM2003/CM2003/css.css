@@ -86,7 +86,7 @@ p{
 
 #panel-left {
     top: 105px;
-    height: 800px;
+    height: 740px;
     width: 200px;
     margin-left: 12.45%;
     background-color:#00cccc;
@@ -127,7 +127,7 @@ div.mypanel {
 }
 
 footer {
-    position:relative;
+
     bottom: 0;
     background-color: orange;
     margin-top: -375px;
