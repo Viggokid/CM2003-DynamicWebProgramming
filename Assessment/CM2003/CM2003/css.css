@@ -23,7 +23,7 @@ p{
 
 
 .header{
-    display: block;
+
     top: 0;
     width: 75%;
     height: 95px;
@@ -71,7 +71,6 @@ p{
     position:fixed;
     top:0;
     width: 100%;
-    min-width: 1024px;
 }
 
 #page{
@@ -87,29 +86,11 @@ p{
 }
 
 #panel-left {
-    position: fixed;
-    top: 0;
+    top: 125px;
     padding-top: 110px;
     height: 823px;
     width: 200px;
-    left: 0;
-    background-color:#00cccc;
-}
-#panel-left-story {
-    margin-top: -457px;
-    height: 823px;
-    min-width: 200px;
-    width: 200px;
-    margin-left: 236px;
-    background-color:#00cccc;
-}
-
-#panel-left-pic {
-    margin-top: -824px;
-    height: 823px;
-    min-width: 200px;
-    width: 200px;
-    margin-left: 238px;
+    margin-left: 12.5%;
     background-color:#00cccc;
 }
 
@@ -140,24 +121,11 @@ div.mypanel {
     display: block;
     position: relative;
     min-width: 1024px;
-    width: 70%;
+    width: 50%;
     height: 550px;
-    margin-left: auto;
+    margin-left: 25%;
     margin-right: auto;
-    //margin-top: 100px;
-}
-
-#floating-panel {
-    top: 150px;
-    left: 25%;
-    z-index: 5;
-    background-color: #fff;
-    padding: 5px;
-    border: 1px solid #999;
-    text-align: center;
-    font-family: 'Roboto','sans-serif';
-    line-height: 30px;
-    padding-left: 10px;
+    margin-top: 100px;
 }
 
 footer {
@@ -165,10 +133,9 @@ footer {
     bottom: 0;
     background-color: orange;
     margin-top: -375px;
-    left: 0;
-
+    margin-left: 12.5%;
     height: 100px;
-    width: 100%;
+    width: 75%;
     overflow: hidden;
 }
 
