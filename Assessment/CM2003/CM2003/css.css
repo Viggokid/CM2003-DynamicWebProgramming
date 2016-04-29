@@ -6,6 +6,7 @@ html {
 
 body{
     font-family: "Verdana", sans-serif;
+    background-image: url(http://data.hdwallpapers.im/dingle_peninsula_coastline_irel.jpg);
 }
 h1{
     text-align: center;
@@ -32,7 +33,7 @@ p{
     margin-top: -25px;
     margin-right: auto;
     margin-left: auto;
-    background: #00CCFF;
+    background: #eb7e1f;
 }
 
 .icon{
@@ -79,12 +80,14 @@ p{
 }
 
 #main {
+    padding: 15px;
     margin-top: -12px;
     padding-left: 100px;
     padding-right: 100px;
-    margin-left: 436px;
     background-color:lightyellow;
-    width: 1015px;
+    margin-left: 456px;
+    background-color:#DDDDDD;
+    width: 50%;
 }
 
 #panel-left {
@@ -92,7 +95,7 @@ p{
     height: 745px;
     width: 200px;
     margin-left: 12.45%;
-    background-color:#00cccc;
+    background-color:#eb7e1f;
 }
 
 div.mypanel {
@@ -132,20 +135,25 @@ div.mypanel {
 }
 
 .noscriptmsg{
-    display: block;
+    display: none;
     position: relative;
     min-width: 1024px;
     width: 50%;
     height: 550px;
     margin-left: 25%;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: -450px;
+
+}
+
+#noscripttxt{
+    padding: 15px;
 }
 
 footer {
     position:relative;
     bottom: 0;
-    background-color: orange;
+    background-color: #eb941f;
     margin-top: -375px;
     margin-left: 12.5%;
     height: 100px;
@@ -242,17 +250,21 @@ footer {
     min-width: 1024px;
 }
 
+
 #about{
+    padding: 15px;
     margin-top: 750px;
     margin-left: 200px;
     max-width: 1400px;
     width: 100%;
+    background: #EEEEEE;
 }
 
 .icon{
     margin-top: -50px;
     margin-bottom: 500px;
     margin-left: 60px;
+    vertical-align: middle;
 }
 
 .uploadButton{

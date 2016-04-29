@@ -16,6 +16,11 @@
 
             </div>
 
+            <style type="text/css">
+                #panel-left{display: none; height: 980px}
+
+            </style>
+
             <!---Navigation Bar--->
             <div class= "navbar">
                 <ul>
@@ -60,14 +65,16 @@
         </div>
         <!---End of Album Pictures--->
 
+
+
         <!---Left Panel of Pictures--->
         <div id="panel-left" class="mypanel">
             <p><b>Pictures</b></p>
-            <p><a href = "#"><p>Picture1</p>
-            <p><a href="#"><p>Picture2</p></a>
-            <p><a href = "#"><p>Picture3</p>
-            <p><a href="#"><p>Picture4</p></a>
-            <p><a href = "#"><p>Picture5</p>
+            <p><a onclick="changeImage('first')"><p>Picture1</p>
+            <p><a onclick="changeImage('second')"><p>Picture2</p></a>
+            <p><a onclick="changeImage('third')"><p>Picture3</p>
+            <p><a onclick="changeImage('fourth')"><p>Picture4</p></a>
+            <p><a onclick = "changeImage('mainImage')"><p>Picture5</p>
         </div>
     </body>
 
