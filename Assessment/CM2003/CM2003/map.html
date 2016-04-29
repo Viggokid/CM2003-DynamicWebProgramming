@@ -103,30 +103,31 @@
       <style type="text/css">
           #map {display:none;}
           .class{display:block}
+
       </style>
       <div class="noscriptmsg">
           You don't have javascript enabled.  Google Maps will not work. This is a non-interactive image.
           <img id = "routeImage1" src="route1.png" width = 1024px height = 550px>
 
       </div>
-
-      <div id="panel-left" class="mypanel">
-          <p><b>Routes</b></p>
-          <div id = "route1"><a href="map.html"><p>Route 1: Aberdeen to Newtonhill</p></a></div>
-          <div id = "route2"><a href="map2.html"><p>Route 2: Stonehaven to Montrose</p></a></div>
-
-      </div>
-
   </noscript>
 
-    <script>
+
 	 <div id="panel-left" class="mypanel">
             <p><b>Routes</b></p>
-            <div id = "route1"><a href="javascript:initMap('aberdeen, uk','newtonhill, uk');"><p>Route 1: Aberdeen to Newtonhill</p></a></div>
-            <div id = "route2"><a href="javascript:initMap('stonehaven, uk','montrose, uk');"><p>Route 2: Stonehaven to Montrose</p></a></div>
-                    
+         <div id="noscript">
+             <div class = "route1"><a href="map.html"><p>Route 1: Aberdeen to Newtonhill</p></a></div>
+             <div class = "route2"><a href="map2.html"><p>Route 2: Stonehaven to Montrose</p></a></div>
+         </div>
+         <script>
+         $("#noscript").hide();
+         $("#script").show();
+     </script>
+         <div id = "script">
+            <div class = "route1"><a href="javascript:initMap('aberdeen, uk','newtonhill, uk');"><p>Route 1: Aberdeen to Newtonhill</p></a></div>
+            <div class = "route2"><a href="javascript:initMap('stonehaven, uk','montrose, uk');"><p>Route 2: Stonehaven to Montrose</p></a></div>
+         </div>
     </div>
-    </script>
                     
 	<footer>
 		<p id='pText'>Selected Icon on Map will have its story appear here in short form. Link to long form story here</p>

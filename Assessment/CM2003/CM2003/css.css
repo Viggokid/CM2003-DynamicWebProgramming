@@ -20,7 +20,9 @@ p{
     margin-left: 10px;
 }
 
-
+#script{
+    display: none;
+}
 
 .header{
     display: block;
