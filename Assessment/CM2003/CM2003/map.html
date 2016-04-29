@@ -119,20 +119,20 @@
 	 <div id="panel-left" class="mypanel">
             <p><b>Routes</b></p>
          <div id="noscript">
-             <div class = "route1ns"><a href="map.html"><p>Route 1: Aberdeen to Newtonhill</p></a></div>
-             <div class = "route2ns"><a href="map2.html"><p>Route 2: Stonehaven to Montrose</p></a></div>
+             <div id = "route1ns"><a href="map.html"><p>Route 1: Aberdeen to Newtonhill</p></a></div>
+             <div id = "route2ns"><a href="map2.html"><p>Route 2: Stonehaven to Montrose</p></a></div>
          </div>
          <script>
-             $("#noscript").hide();
-             $(".route1ns").hide();
-             $(".route2ns").hide();
+             $("#noscript").remove();
+             $(".route1ns").remove();
+             $(".route2ns").remove();
              $("#script").show();
              $(".route1").show();
              $(".route2").show();
          </script>
          <div id = "script">
-            <div class = "route1"><a href="javascript:initMap('aberdeen, uk','newtonhill, uk');"><p>Route 1: Aberdeen to Newtonhill</p></a></div>
-            <div class = "route2"><a href="javascript:initMap('stonehaven, uk','montrose, uk');"><p>Route 2: Stonehaven to Montrose</p></a></div>
+            <div id = "route1"><a href="javascript:initMap('aberdeen, uk','newtonhill, uk');"><p>Route 1: Aberdeen to Newtonhill</p></a></div>
+            <div id = "route2"><a href="javascript:initMap('stonehaven, uk','montrose, uk');"><p>Route 2: Stonehaven to Montrose</p></a></div>
          </div>
     </div>
                     
