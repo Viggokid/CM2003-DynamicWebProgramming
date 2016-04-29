@@ -118,7 +118,7 @@ div.mypanel {
     display: inLine-block;
 }
 
-#map {
+#map, .noscriptmsg {
     display: block;
     position: relative;
     min-width: 1024px;
